@@ -19,17 +19,17 @@ p {
   margin-left: auto;
 }
 
-.row {
-  width: 100%;
+.module {
+  padding: 10px;
 }
 
-.row div {
+.module div {
   position: relative;
   border: 1px solid black;
   background-color: grey;
-  margin: 5px;
 }
-div span {
+
+span {
   position: absolute;
   right: 0;
   border: 1px solid black;
@@ -37,14 +37,14 @@ div span {
   width: 30%;
   text-align: center;
 }
-div.is-pink span {
+span.is-pink {
   background-color: pink;
 }
-div.is-red span {
+span.is-red {
   background-color: red;
   color: white;
 }
-div.is-yellow span {
+span.is-yellow {
   background-color: yellow;
 }
 
@@ -54,7 +54,6 @@ div.is-yellow span {
   .col-lg-3 {
     width: 33.3%;
     float: left;
-    border: 1px solid green;
   }
 }
 
@@ -63,7 +62,6 @@ div.is-yellow span {
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-6, .col-md-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-md-6 {
     width: 50%;
