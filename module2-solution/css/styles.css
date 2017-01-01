@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica;
+  font-size: 12px;
+  color: black;
+}
+h1 {
+  margin-bottom: 15px;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+p {
+  width: 90%;
+  padding-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  width: 100%;
+}
+
+.row div {
+  position: relative;
+  border: 1px solid black;
+  background-color: grey;
+  margin: 5px;
+}
+div span {
+  position: absolute;
+  right: 0;
+  border: 1px solid black;
+  display: block;
+  width: 30%;
+  text-align: center;
+}
+div.is-pink span {
+  background-color: pink;
+}
+div.is-red span {
+  background-color: red;
+  color: white;
+}
+div.is-yellow span {
+  background-color: yellow;
+}
+
+/********** The browser should display a desktop version of the site when the width 
+            of the browser window is 992px and above **********/
+@media (min-width: 992px) {
+  .col-lg-3 {
+    width: 33.3%;
+    float: left;
+    border: 1px solid green;
+  }
+}
+
+/********** Tablet view should appear only if the width 
+            of the browser window is between 768px and 991px, inclusively **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
