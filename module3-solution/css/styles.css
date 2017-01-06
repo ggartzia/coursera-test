@@ -24,11 +24,6 @@ body {
 .container-fluid {
 	margin-top: -15px;
 }
-h2 {
-  margin-bottom: 15px;
-  font-size: 1.75em;
-  text-align: center;
-}
 
 p {
   width: 90%;
